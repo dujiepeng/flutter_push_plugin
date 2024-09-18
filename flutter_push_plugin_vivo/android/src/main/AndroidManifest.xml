@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dcstudio.flutter_push_plugin_vivo">
+    <application>
+        <receiver android:name="com.dcstudio.flutter_push_plugin_vivo.VivoReceiver"
+            android:exported="true">
+            <intent-filter>
+                <!--接收push消息-->
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:permission="com.push.permission.UPSTAGESERVICE"
+            android:exported="true"/>
+
+
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="500"/>
+
+    </application>
+</manifest>

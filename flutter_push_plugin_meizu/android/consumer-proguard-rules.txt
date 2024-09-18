@@ -1,0 +1,3 @@
+-dontwarn com.meizu.cloud.** 
+-keep public class * extends android.app.Service
+-keep class com.meizu.cloud.** { *;}

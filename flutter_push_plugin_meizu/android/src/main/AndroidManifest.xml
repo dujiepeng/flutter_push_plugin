@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.dcstudio.flutter_push_plugin_meizu">
+    <uses-permission android:name="android.Manifest.permission.POST_NOTIFICATIONS" android:minSdkVersion="33"/>
+    <!-- 兼容 flyme5.0 以下版本，魅族内部集成 pushSDK 必填，不然无法收到消息-->
+<!--    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />-->
+<!--    <permission-->
+<!--        android:name="${applicationId}.push.permission.MESSAGE"-->
+<!--        android:protectionLevel="signature" />-->
+<!--    <uses-permission android:name="${applicationId}.push.permission.MESSAGE" />-->
+<!--    &lt;!&ndash; 兼容 flyme3.0 配置权限&ndash;&gt;-->
+<!--    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />-->
+<!--    <permission-->
+<!--        android:name="${applicationId}.permission.C2D_MESSAGE"-->
+<!--        android:protectionLevel="signature" />-->
+<!--    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />-->
+    <!-- 魅族推送配置 end-->
+    <application>
+        <receiver android:name="com.dcstudio.flutter_push_plugin_meizu.MzReceiver"
+            android:exported="true"
+            android:permission="com.meizu.cloud.push.permission.MESSAGE">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <action
+                    android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

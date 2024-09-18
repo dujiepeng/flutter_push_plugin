@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.dcstudio.flutter_push_plugin_oppo">
+    <application>
+        <service
+            android:name="com.dcstudio.flutter_push_plugin_oppo.OppoReceiver"
+            android:exported="true"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+
+<!--        <service-->
+<!--            android:name="com.ease.im_flutter_sdk_push_oppo.oppo.OppoOldMessageService"-->
+<!--            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+    </application>
+</manifest>

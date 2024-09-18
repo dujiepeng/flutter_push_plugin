@@ -1,0 +1,88 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutter_push_demo",
+            "cwd": "flutter_push_demo",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_push_demo (profile mode)",
+            "cwd": "flutter_push_demo",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_push_demo (release mode)",
+            "cwd": "flutter_push_demo",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_push_plugin",
+            "cwd": "flutter_push_plugin",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_push_plugin (profile mode)",
+            "cwd": "flutter_push_plugin",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_push_plugin (release mode)",
+            "cwd": "flutter_push_plugin",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_push_plugin_ios",
+            "cwd": "flutter_push_plugin_ios",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_push_plugin_ios (profile mode)",
+            "cwd": "flutter_push_plugin_ios",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_push_plugin_ios (release mode)",
+            "cwd": "flutter_push_plugin_ios",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_push_plugin_meizu",
+            "cwd": "flutter_push_plugin_meizu",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_push_plugin_meizu (profile mode)",
+            "cwd": "flutter_push_plugin_meizu",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_push_plugin_meizu (release mode)",
+            "cwd": "flutter_push_plugin_meizu",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
