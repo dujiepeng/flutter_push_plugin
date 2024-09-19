@@ -2,7 +2,7 @@
 
 获取原生deviceToken插件
 
-默认包含iOS，如果需要安卓，需要在依赖中添加对应的设备类型，目前支持 `oppo`、`vivo`、`meizu`、`huawei`、`honor`
+默认包含iOS，如果需要安卓，需要在依赖中添加对应的设备类型，安卓目前支持 `oppo`、`vivo`、`meizu`、`huawei`、`honor`
 
 ## 添加方式
 
