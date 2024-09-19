@@ -1,15 +1,41 @@
 # flutter_push_plugin
 
-A new Flutter plugin project.
+获取原生deviceToken插件
 
-## Getting Started
+默认包含iOS，如果需要安卓，需要在依赖中添加对应的设备类型，目前支持 `oppo`、`vivo`、`meizu`、`huawei`、`honor`
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## 添加方式
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+  flutter_push_plugin:
+    path: ../flutter_push_plugin
+  flutter_push_plugin_meizu:
+    path: ../flutter_push_plugin_meizu
+  flutter_push_plugin_vivo:
+    path: ../flutter_push_plugin_vivo
+  flutter_push_plugin_oppo:
+    path: ../flutter_push_plugin_oppo
+  flutter_push_plugin_huawei:
+    path: ../flutter_push_plugin_huawei
+  flutter_push_plugin_honor:
+    path: ../flutter_push_plugin_honor
+```
 
+## 获取 token
+
+1. 添加监听
+
+   ```dart
+       FlutterPushPlugin.getTokenStream().listen((event) {
+      debugPrint('Token: $event');
+      setState(() {
+        _text = event;
+      });
+    });
+   ```
+
+2. 注册token
+
+    ```dart
+        FlutterPushPlugin.registerToken();
+    ```

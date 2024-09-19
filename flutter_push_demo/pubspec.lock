@@ -45,6 +45,41 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  flutter_push_plugin_honor:
+    dependency: "direct main"
+    description:
+      path: "../flutter_push_plugin_honor"
+      relative: true
+    source: path
+    version: "0.0.1"
+  flutter_push_plugin_huawei:
+    dependency: "direct main"
+    description:
+      path: "../flutter_push_plugin_huawei"
+      relative: true
+    source: path
+    version: "0.0.1"
+  flutter_push_plugin_meizu:
+    dependency: "direct main"
+    description:
+      path: "../flutter_push_plugin_meizu"
+      relative: true
+    source: path
+    version: "0.0.1"
+  flutter_push_plugin_oppo:
+    dependency: "direct main"
+    description:
+      path: "../flutter_push_plugin_oppo"
+      relative: true
+    source: path
+    version: "0.0.1"
+  flutter_push_plugin_vivo:
+    dependency: "direct main"
+    description:
+      path: "../flutter_push_plugin_vivo"
+      relative: true
+    source: path
+    version: "0.0.1"
   lints:
     dependency: transitive
     description:

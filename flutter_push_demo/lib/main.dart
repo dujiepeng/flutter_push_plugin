@@ -61,10 +61,6 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {
         _text = event;
       });
-    }).onDone(() {
-      setState(() {
-        _text = "done";
-      });
     });
     super.initState();
   }
