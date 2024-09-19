@@ -1,4 +1,4 @@
-name: flutter_push_plugin_ios
+name: flutter_push_plugin_honor
 description: "A new Flutter plugin project."
 version: 0.0.1
 homepage:
@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
 
 dev_dependencies:
   flutter_lints: ^4.0.0
@@ -32,8 +31,9 @@ flutter:
   # adding or updating assets for this project.
   plugin:
     platforms:
-      ios:
-        pluginClass: FlutterPushPluginIosPlugin
+      android:
+        package: com.dcstudio.flutter_push_plugin_honor
+        pluginClass: FlutterPushPluginHonorPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

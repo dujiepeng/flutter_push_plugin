@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.dcstudio.flutter_push_plugin_honor">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <meta-data
+            android:name="com.hihonor.push.app_id"
+            android:value="${applicationId}" />
+        <service
+            android:name="com.dcstudio.flutter_push_plugin_honor.HonorReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ease.im_flutter_sdk_push_honor.honor.HonorMessagesService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <queries>
+            <intent>
+                <action android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
+            </intent>
+        </queries>
+    </application>
+</manifest>

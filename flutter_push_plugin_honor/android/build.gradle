@@ -1,0 +1,53 @@
+group = "com.dcstudio.flutter_push_plugin_honor"
+version = "1.0"
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://developer.hihonor.com/repo' }
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.0")
+        classpath 'com.hihonor.mcs:asplugin:2.0.1.300'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://developer.hihonor.com/repo' }
+    }
+}
+
+apply plugin: "com.android.library"
+
+android {
+    if (project.android.hasProperty("namespace")) {
+        namespace = "com.dcstudio.flutter_push_plugin_honor"
+    }
+
+    compileSdk = 34
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdk = 21
+        consumerProguardFiles 'consumer-proguard-rules.txt'
+    }
+
+    dependencies {
+        implementation 'com.hihonor.mcs:push:7.0.61.303'
+    }
+}
+
+dependencies {
+    implementation project(':flutter_push_plugin')
+}
+
+

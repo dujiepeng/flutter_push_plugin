@@ -1,4 +1,4 @@
-# flutter_push_plugin_ios
+# flutter_push_plugin_honor
 
 A new Flutter plugin project.
 
