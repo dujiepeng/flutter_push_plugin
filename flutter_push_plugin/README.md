@@ -26,7 +26,7 @@
 1. 添加监听
 
    ```dart
-       FlutterPushPlugin.getTokenStream().listen((event) {
+    FlutterPushPlugin.getTokenStream().listen((event) {
       debugPrint('Token: $event');
       setState(() {
         _text = event;
