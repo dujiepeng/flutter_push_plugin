@@ -54,7 +54,6 @@
         <!-- vivo end -->
 
         <!-- oppo -->
-
         <meta-data
             android:name="OPPO_APP_KEY"
             android:value="db8f852d38874c0b9ffd3dd121300a99" />
@@ -63,6 +62,15 @@
             android:name="OPPO_APP_SECRET"
             android:value="87dda0f802054bfc986c94e1f4e150dc" />
         <!-- oppo end -->
+
+
+        <!-- huawei -->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="112079713">
+        </meta-data>
+
+        <!-- huawei end-->
 
     </application>
     <!-- Required to query activities that can process text, see:

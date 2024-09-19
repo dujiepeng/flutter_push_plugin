@@ -12,6 +12,8 @@ public class PushConfigLoader {
     static public String oppoAppKey;
     static public String oppoAppSecret;
 
+    static public String huaweiAppId;
+
 
     static public void initialize(Context context)  {
         try {
@@ -21,7 +23,7 @@ public class PushConfigLoader {
             meizuAppKey = info.metaData.getString("MEIZU_APP_KEY", "");
             oppoAppKey = info.metaData.getString("OPPO_APP_KEY", "");
             oppoAppSecret = info.metaData.getString("OPPO_APP_SECRET", "");
-            System.out.println("");
+            huaweiAppId = String.valueOf(info.metaData.getInt("com.huawei.hms.client.appid", 0));
         }catch (PackageManager.NameNotFoundException e) {
 
         }

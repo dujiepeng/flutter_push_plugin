@@ -30,11 +30,27 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        config {
+            keyAlias 'flutter_push_demo'
+            keyPassword '111111'
+            storeFile file('flutter_push_demo.jks')
+            storePassword '111111'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+        }
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.debug
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.debug
         }
     }
 }

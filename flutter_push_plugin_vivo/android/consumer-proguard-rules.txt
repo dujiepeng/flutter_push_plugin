@@ -1,0 +1,4 @@
+-dontwarn com.vivo.push.** 
+-keep class com.vivo.push.**{*; } 
+-keep class com.vivo.vms.**{*; }
+-keep class com.dcstudio.flutter_push_plugin_vivo.VivoReceiver{*;}

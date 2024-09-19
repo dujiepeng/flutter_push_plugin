@@ -33,12 +33,14 @@ dependencies:
 
   flutter_push_plugin:
     path: ../flutter_push_plugin
-  flutter_push_plugin_meizu:
-    path: ../flutter_push_plugin_meizu
-  flutter_push_plugin_vivo:
-    path: ../flutter_push_plugin_vivo
-  flutter_push_plugin_oppo:
-    path: ../flutter_push_plugin_oppo
+  # flutter_push_plugin_meizu:
+  #   path: ../flutter_push_plugin_meizu
+  # flutter_push_plugin_vivo:
+  #   path: ../flutter_push_plugin_vivo
+  # flutter_push_plugin_oppo:
+  #   path: ../flutter_push_plugin_oppo
+  flutter_push_plugin_huawei:
+    path: ../flutter_push_plugin_huawei
 
 
   # The following adds the Cupertino Icons font to your application.
