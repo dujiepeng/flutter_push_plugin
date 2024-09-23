@@ -18,10 +18,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
-        <queries>
-            <intent>
-                <action android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
-            </intent>
-        </queries>
     </application>
+    <queries>
+        <intent>
+            <action android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
+        </intent>
+    </queries>
 </manifest>

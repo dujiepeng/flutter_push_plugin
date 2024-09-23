@@ -80,6 +80,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  flutter_push_plugin_xiaomi:
+    dependency: "direct main"
+    description:
+      path: "../flutter_push_plugin_xiaomi"
+      relative: true
+    source: path
+    version: "0.0.1"
   lints:
     dependency: transitive
     description:

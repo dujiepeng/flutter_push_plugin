@@ -1,0 +1,48 @@
+group = "com.dcstudio.flutter_push_plugin_xiaomi"
+version = "1.0"
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.0")
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: "com.android.library"
+
+android {
+    if (project.android.hasProperty("namespace")) {
+        namespace = "com.dcstudio.flutter_push_plugin_xiaomi"
+    }
+
+    compileSdk = 34
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdk = 21
+        consumerProguardFiles 'consumer-proguard-rules.txt'
+    }
+
+    dependencies {
+        implementation 'com.tencent.timpush:xiaomi-vendor:5.9.9'
+    }
+}
+
+dependencies {
+    implementation project(':flutter_push_plugin')
+}

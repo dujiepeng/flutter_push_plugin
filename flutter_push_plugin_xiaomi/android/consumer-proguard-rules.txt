@@ -1,0 +1,1 @@
+ -keep class com.dcstudio.flutter_push_plugin_xiaomi.XMReceiver {*;}

@@ -1,23 +1,23 @@
 import 'package:flutter/services.dart';
 
 class FlutterPushPlugin {
-  static const tokenEvent = EventChannel('token');
-  static const openNotificationEvent = EventChannel('openNotification');
-  static const MethodChannel channel = MethodChannel('flutter_push_plugin');
+  static const _tokenEvent = EventChannel('token');
+  static const _openNotificationEvent = EventChannel('openNotification');
+  static const _channel = MethodChannel('flutter_push_plugin');
 
   static Stream<String> getTokenStream() {
-    return tokenEvent.receiveBroadcastStream().cast<String>();
+    return _tokenEvent.receiveBroadcastStream().cast<String>();
   }
 
   static Stream<String> getOpenNotificationStream() {
-    return openNotificationEvent.receiveBroadcastStream().cast<String>();
+    return _openNotificationEvent.receiveBroadcastStream().cast<String>();
   }
 
   static Future<void> registerToken() async {
-    await channel.invokeMethod('init');
+    await _channel.invokeMethod('init');
   }
 
   static Future<void> unRegisterToken() async {
-    await channel.invokeMethod('unInit');
+    await _channel.invokeMethod('unInit');
   }
 }

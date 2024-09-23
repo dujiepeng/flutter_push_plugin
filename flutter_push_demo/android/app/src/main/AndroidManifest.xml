@@ -69,8 +69,17 @@
             android:name="com.huawei.hms.client.appid"
             android:value="112079713">
         </meta-data>
-
         <!-- huawei end-->
+
+        <!-- xiaomi -->
+        <meta-data
+            android:name="XIAOMI_APP_ID"
+            android:value="2882303761520351410" />
+
+        <meta-data
+            android:name="XIAOMI_APP_KEY"
+            android:value="5592035171410" />
+        <!-- xiaomi end -->
 
     </application>
     <!-- Required to query activities that can process text, see:
