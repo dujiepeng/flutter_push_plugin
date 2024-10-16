@@ -13,6 +13,7 @@
   flutter_push_plugin_oppo: ^0.0.1
   flutter_push_plugin_huawei: ^0.0.1
   flutter_push_plugin_honor: ^0.0.1
+  flutter_push_plugin_xiaomi: ^0.0.1
 ```
 
 ## 获取 token
