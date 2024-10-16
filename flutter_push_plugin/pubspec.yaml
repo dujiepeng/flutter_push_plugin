@@ -1,7 +1,7 @@
 name: flutter_push_plugin
 description: "flutter push plugin"
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/dujiepeng/flutter_push_plugin.git
 
 environment:
   sdk: ^3.5.2

@@ -1,3 +1,8 @@
+## 0.0.2
+
+* 增加返回平台名称 API;
+
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* 创建项目;

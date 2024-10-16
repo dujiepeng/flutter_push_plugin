@@ -44,18 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
   String? _text;
   @override
   void initState() {
-    // FlutterPushPlugin.init();
-
-    FlutterPushPlugin.getOpenNotificationStream().listen((event) {
-      setState(() {
-        _text = event;
-      });
-    }).onDone(() {
-      setState(() {
-        _text = "done";
-      });
-    });
-
     FlutterPushPlugin.getTokenStream().listen((event) {
       debugPrint('Token: $event');
       setState(() {

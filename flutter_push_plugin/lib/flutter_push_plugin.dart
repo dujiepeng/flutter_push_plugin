@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/services.dart';
 
 class FlutterPushPlugin {
@@ -19,5 +21,14 @@ class FlutterPushPlugin {
 
   static Future<void> unRegisterToken() async {
     await _channel.invokeMethod('unInit');
+  }
+
+  static Future<String?> getPlatform() async {
+    if (Platform.isAndroid) {
+      final version = await _channel.invokeMethod<String>('getPlatform');
+      return version;
+    } else {
+      return 'IOS';
+    }
   }
 }

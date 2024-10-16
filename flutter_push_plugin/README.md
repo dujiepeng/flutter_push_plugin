@@ -7,35 +7,35 @@
 ## 添加方式
 
 ```dart
-  flutter_push_plugin:
-    path: ../flutter_push_plugin
-  flutter_push_plugin_meizu:
-    path: ../flutter_push_plugin_meizu
-  flutter_push_plugin_vivo:
-    path: ../flutter_push_plugin_vivo
-  flutter_push_plugin_oppo:
-    path: ../flutter_push_plugin_oppo
-  flutter_push_plugin_huawei:
-    path: ../flutter_push_plugin_huawei
-  flutter_push_plugin_honor:
-    path: ../flutter_push_plugin_honor
+  flutter_push_plugin: ^0.0.2
+  flutter_push_plugin_meizu: ^0.0.1
+  flutter_push_plugin_vivo: ^0.0.1
+  flutter_push_plugin_oppo: ^0.0.1
+  flutter_push_plugin_huawei: ^0.0.1
+  flutter_push_plugin_honor: ^0.0.1
 ```
 
 ## 获取 token
 
 1. 添加监听
 
-   ```dart
-    FlutterPushPlugin.getTokenStream().listen((event) {
-      debugPrint('Token: $event');
-      setState(() {
-        _text = event;
-      });
-    });
+```dart
+FlutterPushPlugin.getTokenStream().listen((event) {
+  debugPrint('Token: $event');
+  setState(() {
+    _text = event;
+  });
+});
    ```
 
 2. 注册token
 
-    ```dart
-        FlutterPushPlugin.registerToken();
-    ```
+```dart
+    FlutterPushPlugin.registerToken();
+```
+
+3. 获取当前平台
+
+```dart
+  String? platform = await FlutterPushPlugin.getPlatform();
+```
