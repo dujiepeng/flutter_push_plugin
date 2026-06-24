@@ -10,7 +10,6 @@ public class VivoReceiver extends OpenClientPushMessageReceiver {
     @Override
     public void onReceiveRegId(Context context, String regId) {
         super.onReceiveRegId(context, regId);
-        IntentEventSender.sendTokenIntent(context, regId);
     }
 
     @Override
